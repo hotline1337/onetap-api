@@ -6,7 +6,7 @@ let js = require('jsearch'); // npm i --save jsearch
 
 let username = "lani"; // username we want to find
 
-// using google, bing gives out only microsoft pages and yandex rate limits you after 2 requests (but was the most accurate and was fiding most of the users)
+// using google, bing gives out only microsoft pages and yandex rate limits you after 2 requests (but was the most accurate and was finding most of the users)
 js.google(`${username}-onetap`, 0, (response) => {
     let reg = new RegExp(`${username.toLowerCase()}.[0-9]+`, "g"); // regular expression (pattern => username.uid)
 
