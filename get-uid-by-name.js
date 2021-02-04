@@ -11,7 +11,7 @@ js.google(`${username}-onetap`, 0, (response) => {
     let reg = new RegExp(`${username.toLowerCase()}.[0-9]+`, "g"); // regular expression (pattern => username.uid)
 
     let response_text = response.toString()  // convert array of results to string
-                .match(reg)                 //  grab all matching strings to the regexp we made
+                .match(reg)                 //  grab all matching strings and compare it to the regexp we made
                 .toString()                //   convert another array of results to string
                 .match(/\.[0-9]+/g)[0]    //    use regular expression to find uid in string (pattern => uid)
                 .substring(1);           //     delete the first character (dot)
