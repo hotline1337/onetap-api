@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const fs = require("fs");
-const Shoppy = module.require('shoppy.gg');
+const Shoppy = require('shoppy.gg');
 const https = require("https");
 const query = require("querystring");
 
